@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import HeaderItem from './HeaderItem.js';
+import styled from 'styled-components';
+import HeaderItem from './HeaderItem';
 
 class Header extends Component {
   render() {

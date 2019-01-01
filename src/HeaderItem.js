@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 const HeaderItem = ({ name, href }) => (
   <div>
-  {name}
+    {name}
   </div>
-)
+);
 
 export default HeaderItem;
