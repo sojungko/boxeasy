@@ -5,8 +5,7 @@ import Header from './Header';
 
 export default class extends Component {
   static async getInitialProps({ req }) {
-    const userAgent = req ? req.headers['user-agent'] : navigator.userAgent;
-    return { userAgent };
+    return {};
   }
 
   render() {
@@ -14,7 +13,7 @@ export default class extends Component {
     return (
       <div>
         <Head>
-          <title>My page title</title>
+          <title>Boxeasy - Sell and buy used boxes</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <Header />

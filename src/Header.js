@@ -12,8 +12,12 @@ const Header = () => {
       href: '/terms',
     },
     {
-      name: 'Donate Boxes',
-      href: '/schedule',
+      name: 'Buy',
+      href: '/buy',
+    },
+    {
+      name: 'Sell',
+      href: '/sell',
     },
   ];
   return (

@@ -27,6 +27,7 @@ app.prepare().then(() => {
 
         req.on('end', () => {
           const url = `https://maps.googleapis.com/maps/api/place/autocomplete/json?key=${GOOGLE_MAPS_API_KEY}&input=${body}`;
+          console.log('url', url);
           get(url, (resp) => {
             let data = '';
 
@@ -44,12 +45,9 @@ app.prepare().then(() => {
       }
     }
 
-    if (pathname === '/about') {
-      app.render(req, res, '/about', query);
-    } else if (pathname === '/schedule') {
-      app.render(req, res, '/schedule', query);
-    } else if (pathname === '/terms') {
-      app.render(req, res, '/terms', query);
+    const validPathnames = ['about', 'terms', 'buy', 'sell'];
+    if (validPathnames.includes(pathname)) {
+      app.render(req, res, pathname, query);
     } else {
       handle(req, res, parsedUrl);
     }

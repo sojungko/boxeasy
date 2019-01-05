@@ -2,6 +2,6 @@ import React from 'react';
 
 export default () => (
   <div>
-    We buy and sell used boxes for cheap.
+    To schedule a pickup, please email info@boxeasy.co.
   </div>
 );

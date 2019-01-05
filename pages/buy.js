@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import App from '../src/App';
-import Schedule from '../src/Schedule';
+import Buy from '../src/Buy';
 
 export default class extends Component {
   static async getInitialProps({ req }) {
@@ -10,7 +10,7 @@ export default class extends Component {
   render() {
     return (
       <App>
-        <Schedule />
+        <Buy />
       </App>
     );
   }
