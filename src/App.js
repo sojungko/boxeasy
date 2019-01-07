@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Head from 'next/head';
 import Header from './Header';
 
-export default class extends Component {
+class App extends Component {
   static async getInitialProps({ req }) {
     return {};
   }
@@ -15,6 +15,7 @@ export default class extends Component {
         <Head>
           <title>Boxeasy - Sell and buy used boxes</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
         </Head>
         <Header />
         {children}
@@ -22,3 +23,5 @@ export default class extends Component {
     );
   }
 }
+
+export default App;
