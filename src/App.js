@@ -15,7 +15,7 @@ class App extends Component {
         <Head>
           <title>Boxeasy - Sell and buy used boxes</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans" rel="stylesheet" />
         </Head>
         <Header />
         {children}

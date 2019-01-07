@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import HeaderItem from './HeaderItem';
 
 const Header = () => {
@@ -21,21 +21,32 @@ const Header = () => {
     },
   ];
   return (
-    <nav>
-      <h1>
-        Boxeasy
-      </h1>
-      <style jsx>{`
-        h1 {
-          color: red;
-          font-family: "Josefin Sans", sans-serif;
-          text-transform: uppercase;
-        }
-      `}</style>
-      {headerItems.map(props => (
-        <HeaderItem {...props} key={props.name} />
-      ))}
-    </nav>
+    <Fragment>
+      <nav>
+        <h1>Boxeasy</h1>
+        <ul>
+          {headerItems.map(props => (
+            <HeaderItem {...props} key={props.name} />
+          ))}
+        </ul>
+      </nav>
+      <style jsx>
+        {`
+          nav {
+            display: flex;
+            justify-content: space-between;
+          }
+          h1 {
+            color: red;
+            font-family: "Josefin Sans", sans-serif;
+            text-transform: uppercase;
+          }
+          ul {
+            display: flex;
+          }
+        `}
+      </style>
+    </Fragment>
   );
 };
 
